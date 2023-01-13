@@ -1,5 +1,7 @@
 import { Configuration, OpenAIApi } from 'openai';
 
+if(process.env.OPENAI_API_KEY){console.log("API key: true")} else{console.log("API key: false")}
+
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
